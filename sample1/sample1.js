@@ -10,6 +10,7 @@ var app = new Vue({
             this.msg1 = 'こんにちはReact.js';
         },
         kaibun: function (str) {
+            if(str.length === 0) return;
             var rts = str.split('').reverse().join('');
             if (str === rts){
                 return '回文です';
