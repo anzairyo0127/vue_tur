@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<header>
+    <meta charset="utf-8"/>
+    <title>test</title>
+</header>
+<body>
+    <div id="app">
+        <button name="myBtn" v-on:click="changeMsg1">クリックして</button>
+        <h1>{{ msg1 }}</h1>
+        <p>ようこそ {{ msg2 }}の世界へ。</p>
+        <input type="text" name="inp" v-model="inputValue">
+        <p>{{ kaibun(inputValue) }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+    <script src="./sample1.js"></script>
+</body>
+</html>
