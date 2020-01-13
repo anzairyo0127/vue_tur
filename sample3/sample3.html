@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<header>
+    <meta charset="utf-8"/>
+    <title>test</title>
+</header>
+<body>
+    <div id="app">
+        <button @click="show = !show">表示非表示</button>
+        <p v-show="show">おこご</p>おはよ
+        <p v-if="getTime() == 'morning'">おはよ</p>
+        <p v-else-if="getTime() == 'afternoon'">こんにちは</p>
+        <p v-else-if="getTime() == 'evening'">こんばんは</p>
+        <p v-else>ほげほげ</p>
+        <li v-for="(wday,i) in weekdays">{{ i }}-{{ wday }}曜日</li>
+        <span v-for="m in 15">{{m}}回</span>
+        <li v-for="(v, k) in customer">{{k}}:{{v}}</li>
+        <li v-for="color in colors">{{ color }}</li>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+    <script src="./sample3.js"></script>
+</body>
+</html>
